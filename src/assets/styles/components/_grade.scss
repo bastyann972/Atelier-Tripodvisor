@@ -1,0 +1,18 @@
+.grade {
+  margin-top: 1rem;
+  border-top: var(--border-normal);
+  padding-top: 1rem;
+
+  &--hidden {
+    display: none;
+  }
+  
+  &__title {
+    font-weight: bold;
+  }
+  
+  &__stars {
+    margin: 1rem 0;
+    color: var(--color-main);
+  }
+}

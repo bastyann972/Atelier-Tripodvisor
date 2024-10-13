@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trip O'dvisor</title>
+  <link rel="stylesheet" href="./assets/styles/index.scss">
+  <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+  <header class="header" role="banner">
+    <div>
+      <div class="header__part">
+        <div class="container">
+          <div class="header__flex">
+            <a class="logo" href="">
+              <img class="logo__image" src="./assets/img/logo.png" alt="">
+              <span class="logo__title">Trip O'dvisor</span>
+            </a>
+            <nav class="menu" role="navigation" aria-label="Menu principal">
+              <a class="menu__item" href=""><i class="icon-heart"></i> Favoris</a>
+              <a id="newsletter-btn" class="menu__item" href=""><i class="icon-mail"></i> Newsletter</a>
+              <a class="menu__item" href=""><i class="icon-check-circle"></i> Avis</a>
+              <button id="theme-switch" class="btn" type="button" title="Changer le thème">
+                <i class="icon-moon"></i>
+                <span class="sr-only">Changer le thème</span>
+              </button>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="header__part">
+        <div class="container">
+          <nav class="submenu" role="navigation" aria-label="Menu secondaire">
+            <a class="submenu__item submenu__item--current" aria-current="page" href="">Voyages</a>
+            <a class="submenu__item" href="">Restaurants</a>
+            <a class="submenu__item" href="">Hôtels</a>
+            <a class="submenu__item" href="">Vols</a>
+            <a class="submenu__item" href="">Croisières</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" role="main">
+    <div class="content">
+      <h1 class="content__title">Partir en voyage</h1>
+
+      <section class="slider">
+        <img class="slider__img slider__img--current" src="./assets/img/ocean.jpg" alt="Partir à la plage">
+        <img class="slider__img" aria-hidden="true" src="./assets/img/ski.jpg" alt="Partir à la montagne">
+        <img class="slider__img" aria-hidden="true" src="./assets/img/city.jpg" alt="Partir à l'étranger">
+        <button class="btn slider__btn" type="button" aria-label="Slide Précédent">&lsaquo;</button>
+        <button class="btn slider__btn" type="button" aria-label="Slide Suivant">&rsaquo;</button>
+      </section>
+
+      <section class="segment">
+        <h2 class="segment__title">Destinations</h2>
+        <div class="cards">
+          <article class="card">
+            <div class="card__content">
+              <img class="card__image" src="./assets/img/canyon.jpg" alt="">
+              <h3 class="card__title">Partir à l'aventure</h3>
+              <p class="card__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, minima!</p>
+            </div>
+            <div class="card__action">
+              <button class="btn btn__like" type="button" aria-label="J'aime"><i class="icon-heart"></i></button> <a class="btn" href="">Découvrir</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__content">
+              <img class="card__image" src="./assets/img/city.jpg" alt="">
+              <h3 class="card__title">Partir à l'étranger</h3>
+              <p class="card__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, minima!</p>
+            </div>
+            <div class="card__action">
+              <button class="btn btn__like" type="button" aria-label="J'aime"><i class="icon-heart"></i></button> <a class="btn" href="">Découvrir</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__content">
+              <img class="card__image" src="./assets/img/nature.jpg" alt="">
+              <h3 class="card__title">Promenade dans la nature</h3>
+              <p class="card__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, minima!</p>
+            </div>
+            <div class="card__action">
+              <button class="btn btn__like" type="button" aria-label="J'aime"><i class="icon-heart"></i></button> <a class="btn" href="">Découvrir</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__content">
+              <img class="card__image" src="./assets/img/ocean.jpg" alt="">
+              <h3 class="card__title">Partir à la mer</h3>
+              <p class="card__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, minima!</p>
+            </div>
+            <div class="card__action">
+              <button class="btn btn__like" type="button" aria-label="J'aime"><i class="icon-heart"></i></button> <a class="btn" href="">Découvrir</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__content">
+              <img class="card__image" src="./assets/img/road.jpg" alt="">
+              <h3 class="card__title">Road trip</h3>
+              <p class="card__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, minima!</p>
+            </div>
+            <div class="card__action">
+              <button class="btn btn__like" type="button" aria-label="J'aime"><i class="icon-heart"></i></button> <a class="btn" href="">Découvrir</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__content">
+              <img class="card__image" src="./assets/img/ski.jpg" alt="">
+              <h3 class="card__title">Partir à la montagne</h3>
+              <p class="card__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, minima!</p>
+            </div>
+            <div class="card__action">
+              <button class="btn btn__like" type="button" aria-label="J'aime"><i class="icon-heart"></i></button> <a class="btn" href="">Découvrir</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="segment">
+        <h2 class="segment__title">Derniers commentaires</h2>
+        <div class="filters">
+          <span class="filter">
+            <input type="checkbox" name="grade" value="3" id="grade-3" checked>
+            <label for="grade-3">3 étoiles</label>
+          </span>
+          <span class="filter">
+            <input type="checkbox" name="grade" value="2" id="grade-2" checked>
+            <label for="grade-2">2 étoiles</label>
+          </span>
+          <span class="filter">
+            <input type="checkbox" name="grade" value="1" id="grade-1" checked>
+            <label for="grade-1">1 étoile</label>
+          </span>
+        </div>
+        <article class="grade" data-grade="3">
+          <h3 class="grade__title">Térébenthine</h3>
+          <div class="grade__stars" aria-label="3 étoiles sur 3">
+            <i class="icon-star"></i>
+            <i class="icon-star"></i>
+            <i class="icon-star"></i>
+          </div>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias deleniti nesciunt eos eaque officia quibusdam perferendis provident doloremque iusto amet!</p>
+        </article>
+        <article class="grade" data-grade="2">
+          <h3 class="grade__title">Périclès</h3>
+          <div class="grade__stars" aria-label="2 étoiles sur 3">
+            <i class="icon-star"></i>
+            <i class="icon-star"></i>
+          </div>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias deleniti nesciunt eos eaque officia quibusdam perferendis provident doloremque iusto amet!</p>
+        </article>
+        <article class="grade" data-grade="1">
+          <h3 class="grade__title">Zoël</h3>
+          <div class="grade__stars" aria-label="1 étoile sur 3">
+            <i class="icon-star"></i>
+          </div>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias deleniti nesciunt eos eaque officia quibusdam perferendis provident doloremque iusto amet!</p>
+        </article>
+        <article class="grade" data-grade="3">
+          <h3 class="grade__title">Walbert</h3>
+          <div class="grade__stars" aria-label="3 étoiles sur 3">
+            <i class="icon-star"></i>
+            <i class="icon-star"></i>
+            <i class="icon-star"></i>
+          </div>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias deleniti nesciunt eos eaque officia quibusdam perferendis provident doloremque iusto amet!</p>
+        </article>
+        <article class="grade" data-grade="3">
+          <h3 class="grade__title">Glannon</h3>
+          <div class="grade__stars" aria-label="3 étoiles sur 3">
+            <i class="icon-star"></i>
+            <i class="icon-star"></i>
+            <i class="icon-star"></i>
+          </div>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias deleniti nesciunt eos eaque officia quibusdam perferendis provident doloremque iusto amet!</p>
+        </article>
+        <article class="grade" data-grade="1">
+          <h3 class="grade__title">Pétunia</h3>
+          <div class="grade__stars" aria-label="1 étoile sur 3">
+            <i class="icon-star"></i>
+          </div>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias deleniti nesciunt eos eaque officia quibusdam perferendis provident doloremque iusto amet!</p>
+        </article>
+        <article class="grade" data-grade="3">
+          <h3 class="grade__title">Lotus</h3>
+          <div class="grade__stars" aria-label="3 étoiles sur 3">
+            <i class="icon-star"></i>
+            <i class="icon-star"></i>
+            <i class="icon-star"></i>
+          </div>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias deleniti nesciunt eos eaque officia quibusdam perferendis provident doloremque iusto amet!</p>
+        </article>
+        <article class="grade" data-grade="3">
+          <h3 class="grade__title">Caméo</h3>
+          <div class="grade__stars" aria-label="3 étoiles sur 3">
+            <i class="icon-star"></i>
+            <i class="icon-star"></i>
+            <i class="icon-star"></i>
+          </div>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias deleniti nesciunt eos eaque officia quibusdam perferendis provident doloremque iusto amet!</p>
+        </article>
+      </section>
+
+    </div>
+  </main>
+
+  <div class="newsletter" role="dialog" aria-modal="true" aria-labelledby="modal-heading">
+    <button class="newsletter__close btn" aria-label="Fermer" type="button">&Cross;</button>
+    <h2 class="newsletter__title" id="modal-heading">Inscription à la newsletter</h2>
+    <form action="" method="post">
+      <input class="newsletter__field" type="email" required id="subscriber-email" placeholder="user@email.com" aria-label="Votre email">
+      <button class="btn" type="submit">Valider</button>
+    </form>
+  </div>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p>Toute ressemblance avec d'autres contenus est purement fortuite.</p>
+    </div>
+  </footer>
+
+  <script src="./assets/scripts/app.js" type="module"></script>
+</body>
+</html>

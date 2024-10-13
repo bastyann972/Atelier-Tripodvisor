@@ -1,0 +1,20 @@
+// Importing custom styles as modules
+@use "./fonts";
+@use "./global";
+
+// Importing components
+@use "./components/btn";
+@use "./components/card";
+@use "./components/content";
+@use "./components/footer";
+@use "./components/grade";
+@use "./components/header";
+@use "./components/logo";
+@use "./components/menu";
+@use "./components/message";
+@use "./components/newsletter";
+@use "./components/segment";
+@use "./components/slider";
+@use "./components/submenu";
+
+// Your other styles or CSS rules can go here

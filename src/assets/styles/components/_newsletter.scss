@@ -1,0 +1,35 @@
+.newsletter {
+  position: fixed;
+  z-index: 9;
+  right:0;
+  bottom: 0;
+  background-color: var(--color-bg);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border: var(--border-normal);
+  padding: 2rem;
+  width: 25em;
+  max-width: 100%;
+ display: none;
+
+  &--on {
+    display: block;
+    animation: .3s 0s 1 pop;
+  }
+  
+  &__title {
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  &__field {
+    border: var(--border-normal);
+    padding: 0.25rem;
+    border-radius: 5px;
+  }
+  
+  &__close {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}

@@ -1,0 +1,43 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  padding: 1rem;
+  width: 100%;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__title {
+    margin: 0.5rem 0;
+    font-weight: bold;
+  }
+  
+  &__action {
+    margin-top: 1rem;
+    display: flex;
+    
+    .btn {
+      margin-right: 0.25rem;
+    }
+  }
+
+  @media screen and (min-width: 40em) {
+    width: calc((100% - 1rem) / 2);
+
+    &__image {
+      height: 10em;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  
+  @media screen and (min-width: 60em) {
+    width: calc((100% - 2rem) / 3);
+  }
+}

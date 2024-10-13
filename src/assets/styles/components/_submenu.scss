@@ -1,0 +1,15 @@
+.submenu {
+  text-align: center;
+  color: #666;
+  font-size: 0.9em;
+
+  &__item {
+    padding: 1rem 0.5rem;
+    display: inline-block;
+    
+    &--current {
+      border-bottom: 2px solid #666;
+    }
+  }
+  
+}
